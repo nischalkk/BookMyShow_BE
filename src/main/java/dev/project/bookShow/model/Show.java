@@ -10,7 +10,7 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity(name="Showing")
+@Entity(name="BMS_Show")
 public class Show extends BaseModel {
     private LocalDateTime startTime;
     private LocalDateTime endTime;
@@ -20,6 +20,7 @@ public class Show extends BaseModel {
     @ManyToOne
     private Movie movie;
     @OneToMany
+    @JoinColumn(name = "show_id")
     private List<ShowSeat> showSeats;
     @Enumerated(EnumType.STRING)
     private ShowStatus showStatus;

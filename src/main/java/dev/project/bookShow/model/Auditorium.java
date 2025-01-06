@@ -14,7 +14,9 @@ public class Auditorium extends BaseModel{
     private String name;
     private int capacity;
     @OneToMany
+    @JoinColumn(name = "auditorium_id")
     private List<Seat> seats;
     @OneToMany
+    @JoinColumn(name = "auditorium_id")
     private List<Show> shows;
 }

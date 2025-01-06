@@ -10,11 +10,11 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity
-public class Theatre extends BaseModel{
+@Entity(name = "BMS_User")
+public class User extends BaseModel{
     private String name;
-    private String Address;
+    private String email;
     @OneToMany
-    @JoinColumn(name = "theatre_id")
-    private List<Auditorium> auditoriums;
+    @JoinColumn(name = "user_id")
+    private List<Ticket> tickets;
 }
