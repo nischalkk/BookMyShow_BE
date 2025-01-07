@@ -31,7 +31,7 @@ public class CityService{
         if(cityRepository.existsById(id)){
         cityRepository.deleteById(id);
         }
-        
+
     }
 
 }
