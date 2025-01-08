@@ -15,6 +15,9 @@ public class City extends BaseModel{
     @JoinColumn(name="city_id")
     private List<Theatre> theatres;
 
+    public City() {
+    }
+
     public String getName() {
         return name;
     }
