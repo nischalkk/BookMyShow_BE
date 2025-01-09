@@ -25,7 +25,7 @@ public class ShowService {
         List<ShowSeat> showSeats = new ArrayList<>();
         List<Seat> seats = show.getAuditorium().getSeats();
         for (Seat seat: seats){
-            ShowSeat showSeat = new ShowSeat();a
+            ShowSeat showSeat = new ShowSeat();
             showSeat.setSeat(seat);
             showSeat.setPrice(100);
             showSeat.setShowSeatStatus(ShowSeatStatus.AVAILABLE);

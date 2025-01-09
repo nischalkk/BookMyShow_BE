@@ -12,6 +12,16 @@ import java.util.List;
 public class User extends BaseModel{
     private String name;
     private String email;
+    private String password;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @OneToMany
     @JoinColumn(name = "user_id")
     private List<Ticket> tickets;

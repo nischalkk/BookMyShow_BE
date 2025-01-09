@@ -19,6 +19,6 @@ public class BookShowApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		System.out.println("Starting the Data initialisation");
-		initService.initialise();
+//		initService.initialise();
 	}
 }
